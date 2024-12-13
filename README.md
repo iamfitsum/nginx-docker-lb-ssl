@@ -6,21 +6,21 @@ This project demonstrates how to configure Nginx as a reverse proxy, load balanc
 
 ## 📋 Table of Contents
 
-1. [Overview](#overview)
-2. [Project Features](#project-features)
-3. [Technology Stack](#technology-stack)
-4. [Project Structure](#project-structure)
-5. [Prerequisites](#prerequisites)
-6. [Setup Instructions](#setup-instructions)
-   - [Generate Self-Signed SSL Certificates](#generate-self-signed-ssl-certificates)
-   - [Build and Run Docker Containers](#build-and-run-docker-containers)
-   - [Configure and Start Nginx](#configure-and-start-nginx)
-7. [Nginx Configuration Details](#nginx-configuration-details)
-8. [Testing the Setup](#testing-the-setup)
-9. [Troubleshooting](#troubleshooting)
-10. [Commands Cheat Sheet](#commands-cheat-sheet)
-11. [Resources](#resources)
-12. [License](#license)
+1. [Overview](#-overview)
+2. [Project Features](#-project-features)
+3. [Technology Stack](#-technology-stack)
+4. [Project Structure](#-project-structure)
+5. [Prerequisites](#-prerequisites)
+6. [Setup Instructions](#-setup-instructions)
+   - [Generate Self-Signed SSL Certificates](#-generate-self-signed-ssl-certificates)
+   - [Build and Run Docker Containers](#-build-and-run-docker-containers)
+   - [Configure and Start Nginx](#-configure-and-start-nginx)
+7. [Nginx Configuration Details](#-nginx-configuration-details)
+8. [Testing the Setup](#-testing-the-setup)
+9. [Troubleshooting](#-troubleshooting)
+10. [Commands Cheat Sheet](#-commands-cheat-sheet)
+11. [Resources](#-resources)
+12. [License](#-license)
 
 ---
 
