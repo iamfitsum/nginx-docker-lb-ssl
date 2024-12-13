@@ -4,7 +4,7 @@ This project demonstrates how to configure Nginx as a reverse proxy, load balanc
 
 ---
 
-## Table of Contents
+## 📋 Table of Contents
 
 1. [Overview](#overview)
 2. [Project Features](#project-features)
@@ -20,10 +20,11 @@ This project demonstrates how to configure Nginx as a reverse proxy, load balanc
 9. [Troubleshooting](#troubleshooting)
 10. [Commands Cheat Sheet](#commands-cheat-sheet)
 11. [Resources](#resources)
+12. [License](#license)
 
 ---
 
-## Overview
+## 🌟 Overview
 
 In this project, Nginx is configured to:
 
@@ -35,7 +36,7 @@ This setup is ideal for understanding production-grade deployment practices and 
 
 ---
 
-## Project Features
+## ✨ Project Features
 
 - **Load Balancing:** Nginx evenly distributes traffic to three backend servers (app1, app2, app3) running in Docker containers.
 - **HTTPS with Self-Signed Certificates:** Ensures encrypted communication by leveraging OpenSSL-generated certificates.
@@ -45,7 +46,7 @@ This setup is ideal for understanding production-grade deployment practices and 
 
 ---
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 - **Nginx:** Acts as a reverse proxy, load balancer, and HTTPS server.
 - **Node.js:** Hosts the static web application.
@@ -54,7 +55,7 @@ This setup is ideal for understanding production-grade deployment practices and 
 
 ---
 
-## Project Structure
+## 🗂️ Project Structure
 
 ```plaintext
 .
@@ -63,7 +64,7 @@ This setup is ideal for understanding production-grade deployment practices and 
 │   └── [CSS and image files]
 ├── courses.html              # Another static HTML file  
 ├── docker-compose.yaml       # Defines the multi-container Docker setup  
-├── Dockerfile                # Dockerfile tohow can i enable  containerize the Node.js application  
+├── Dockerfile                # Dockerfile to containerize the Node.js application  
 ├── index.html                # Main static HTML file  
 ├── nginx.conf                # Nginx configuration file  
 ├── package.json              # Node.js dependencies and scripts  
@@ -73,7 +74,8 @@ This setup is ideal for understanding production-grade deployment practices and 
 ```
 
 ---
-## Prerequisites
+
+## ✅ Prerequisites
 
 Ensure the following software is installed:
 
@@ -83,9 +85,9 @@ Ensure the following software is installed:
 
 ---
 
-## Setup Instructions
+## 🚀 Setup Instructions
 
-### Generate Self-Signed SSL Certificates
+### 🔐 Generate Self-Signed SSL Certificates
 
 1.  Create a directory to store the certificates:
     ```bash
@@ -99,7 +101,7 @@ Ensure the following software is installed:
     ```
 3.  Move the generated certificates to the location specified in `nginx.conf` (e.g., `/home/[USER]/nginx-certs`).
 
-### Build and Run Docker Containers
+### 🐳 Build and Run Docker Containers
 
 1.  Build the Docker image:
     ```bash
@@ -111,7 +113,7 @@ Ensure the following software is installed:
     ```
     This will start three instances of the Node.js application, running on ports 3001, 3002, and 3003.
 
-### Configure and Start Nginx
+### ⚙️ Configure and Start Nginx
 
 1. Verify the `nginx.conf` file includes the following key configurations:
     - Upstream servers (`app1`, `app2`, `app3`).
@@ -128,7 +130,7 @@ Ensure the following software is installed:
 
 ---
 
-## Nginx Configuration Details
+## 🔧 Nginx Configuration Details
 
 The `nginx.conf` file includes the following key blocks:
 
@@ -161,7 +163,7 @@ The `nginx.conf` file includes the following key blocks:
 
 ---
 
-## Testing the Setup
+## 🧪 Testing the Setup
 
 1.  Open your browser and navigate to `https://localhost`.
 2.  Verify that:
@@ -171,7 +173,7 @@ The `nginx.conf` file includes the following key blocks:
 
 ---
 
-## Troubleshooting
+## 🛠️ Troubleshooting
 
 -   **SSL Certificate Issues:** Ensure the certificate paths in `nginx.conf` are correct and permissions allow Nginx to access them.
 -   **Containers Not Running:** Check container logs with:
@@ -185,7 +187,7 @@ The `nginx.conf` file includes the following key blocks:
 
 ---
 
-## Commands Cheat Sheet
+## 📜 Commands Cheat Sheet
 
 Here's a list of useful commands for managing the project:
 
@@ -213,8 +215,14 @@ Here's a list of useful commands for managing the project:
 
 ---
 
-## Resources
+## 📚 Resources
 
 -   [Nginx Documentation](https://nginx.org/en/docs/)
 -   [Docker Documentation](https://docs.docker.com/)
 -   [OpenSSL Documentation](https://www.openssl.org/docs/)
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
